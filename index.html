@@ -10,10 +10,11 @@
   <body>
     <!-- #region header -->
     <div
-      class="sticky top-0 py-[26px] px-[150px] w-full h-[135px] box-border shadow-sm"
+      class="sticky top-0 pt-[10px] px-[150px] w-full h-[135px] box-border shadow-sm"
     >
+      <!-- #region header-top -->
       <div class="w-full h-3/5 flex items-center justify-start box-border">
-        <div class="w-9/12 h-full flex gap-x-[30px]">
+        <div class="w-9/12 h-full flex items-center gap-x-[30px]">
           <a href="#" class="block w-fit h-fit">
             <img class="w-24" src="./public/images/header/logo.png" alt="" />
           </a>
@@ -95,17 +96,237 @@
           </a>
         </div>
       </div>
-      <div
-        class="w-full h-2/5 bg-fuchsia-950 flex justify-between items-center"
-      >
-        <div
-          class="w-fit h-full mt-6 font-[shabnam] gap-y-[10px] text-[14px] text-[#fe5f55]"
-        >
-          خانه
-          <div class="w-full h-[2px] bg-[#fe6f55]"></div>
-        </div>
+      <!-- #endregion -->
+      <!-- #region header-bottom-->
+      <div class="h-2/5 mt-2 flex gap-x-5 justify-between items-center">
+        <ul class="flex-col h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center items-center nav-link text-[14px] text-[#fe5f55] font-medium font-[shabnam]"
+          >
+            خانه
+          </li>
+          <li class="flex h-[3px] justify-center bg-[#fe5f55]"></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            لوازم جانبی موبایل و کامپیوتر
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            کابل - مبدل - رابط
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            لوازم تولید محتوا
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            لوازم شبکه
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            کنسول بازی و لوازم جانبی
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            لوازم خانگی و شخصی
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] "
+          >
+          برندها
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
       </div>
       <!-- #endregion -->
     </div>
+    <!-- #endregion -->
   </body>
 </html>
