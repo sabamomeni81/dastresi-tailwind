@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="icon" type="image/png" href="./public/images/favicon/icon.png" />
-    <title>سبد خرید</title>
+    <title>باشگاه مشتریان</title>
   </head>
   <body>
     <!-- #region top-refferer-->
@@ -13,7 +13,7 @@
     <!-- #endregion -->
     <!-- #region header-desktop -->
     <div
-      class="sticky top-0 z-50 bg-white lg:pt-[10px] pt-0 px-[150px] w-full h-[135px] box-border shadow-sm"
+      class="sticky top-0 z-10 bg-white lg:pt-[10px] pt-0 px-[150px] w-full h-[135px] box-border shadow-sm"
     >
       <!-- #region header-top -->
       <div class="w-full h-3/5 flex items-center justify-start box-border">
@@ -102,15 +102,13 @@
       <!-- #endregion -->
       <!-- #region header-bottom-->
       <div class="h-2/5 mt-1.5 flex gap-x-5 justify-between items-center">
-        <ul class="flex-col group h-full space-y-4 mt-2">
+        <ul class="flex-col h-full space-y-4 mt-2">
           <li
-            class="flex justify-center items-center nav-link text-[14px] font-medium group-hover:text-[#fe5f55] text-[#00000099] font-[shabnam]"
+            class="flex justify-center items-center nav-link text-[14px] text-[#fe5f55] font-medium font-[shabnam]"
           >
             <a href="index.html">خانه</a>
           </li>
-          <li
-            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
-          ></li>
+          <li class="flex h-[3px] justify-center bg-[#fe5f55]"></li>
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
@@ -333,148 +331,94 @@
       <!-- #endregion -->
     </div>
     <!-- #endregion -->
-    <!-- #region progress-->
-    <div class="py-0 md:py-15.5 px-0 md:px-56">
-      <div class="relative">
-        <div class="flex justify-between">
-          <div class="w-[95%] h-1 top-8 right-2 absolute bg-[#0a5abd]"></div>
-          <div class="relative flex flex-col items-center">
-            <div
-              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-[#0a5abd] text-color"
-            >
-              <img src="./public/svg/basket.svg" class="w-5.5 h-5.5" alt="" />
-            </div>
-            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
-              سبد خرید
-            </div>
-            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
-              سبد
-            </div>
-          </div>
-          <div class="relative flex flex-col items-center">
-            <div
-              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
-            >
-              <img src="./public/svg/location.svg" class="w-5.5 h-5.5" alt="" />
-            </div>
-            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
-              انتخاب آدرس
-            </div>
-            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
-              آدرس
-            </div>
-          </div>
-          <div class="relative flex flex-col items-center">
-            <div
-              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
-            >
-              <img src="./public/svg/truk.svg" class="w-5.5 h-5.5" alt="" />
-            </div>
-            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
-              نحوه ارسال
-            </div>
-            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
-              ارسال
-            </div>
-          </div>
-          <div class="relative flex flex-col items-center">
-            <div
-              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
-            >
-              <img src="./public/svg/wallet.svg" class="w-5.5 h-5.5" alt="" />
-            </div>
-            <div class="mt-2 font-semibold text-[#757575]">پرداخت</div>
-          </div>
+    <!-- #region customer-club -->
+    <div
+      class="w-7xl mx-auto mt-5 mb-5 bg-white border border-[#e2e2e2] rounded-xl px-6 py-6"
+    >
+      <h1 class="mb-6 text-[#757575] text-[30px] font-bold">
+        <a href="Customers-club.html">باشگاه مشتریان</a>
+      </h1>
+      <img
+        class="w-full rounded-xl mb-2"
+        src="./public/images/customer-club/img-1.png"
+        alt=""
+      />
+      <div class="text-black-87 mb-2">
+        <p>
+          باشگاه مشتریان فروشگاه دسترسی در راستای حمایت از مشتریان وفادار سایت
+          ایجاد شده است. به این ترتیب که هر فرد با توجه به تعداد و مبلغی که تا
+          الان از فروشگاه دسترسی خرید نموده و امتیازی که جمع کرده است، میتوانید
+          به یکی از سطوح برنزی، نقره ای و یا طلایی برسد.
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          برای مثال برای اینکه به اولین سطح که برنزی است برسید باید حداقل 10
+          فاکتور خرید و در کل مبلغ 15 میلیون تومان از طریق سایت خرید کرده باشید.
+        </p>
+        <p>&nbsp;</p>
+        <p>ویژگی هر کدام از این سطوح در زیر توضیح داده شده است</p>
+      </div>
+    </div>
+    <div
+      class="flex flex-col w-7xl mx-auto md:flex-row gap-4 bg-white p-6 mb-5 border border-[#e2e2e2] rounded-xl"
+    >
+      <img src="./public/images/customer-club/img-2.png" alt="" class="w-24" />
+      <div class="flex flex-col gap-4">
+        <div class="text-2xl font-bold text-[#a64b24]">سطح برنزی</div>
+        <div class="text-[#757575] text-base">
+          <p>در این سطح</p>
+          <p>
+            - محصولات سایت ( به غیر از کالاهای فروش ویژه) با 2 درصد تخفیف به شما
+            نشان داده خواهد شد.
+          </p>
+          <p>&nbsp;</p>
         </div>
       </div>
     </div>
-    <!-- #endregion -->
-    <!-- #region payment-->
-    <div class="flex flex-col mb-32 px-34 md:flex-row gap-4">
-      <div class="md:w-[67%] flex flex-col">
-        <div
-          class="flex p-4 mb-4 text-[#757575] items-center justify-center rounded-xl border border-gray-200 bg-white h-18"
-        >
-          <div class="w-1/2">کد تخفیف دارید؟</div>
-          <div class="1/2 flex pr-28 items-center gap-2">
-            <input
-              id="text"
-              type="text"
-              class="block w-52 h-8.5 placeholder:text-[#757575] border border-gray-300 rounded-xl text-sm focus:outline-none py-1.5 px-2"
-              placeholder="کد تخفیف"
-            />
-            <div
-              class="w-18 h-9 px-1 text-sm text-white font-semibold flex justify-center bg-[#0a5abd] opacity-50 rounded-xl items-center"
-            >
-              ثبت کوپن
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex flex-col items-center mb-8 w-full bg-white text-gray rounded-xl border border-gray-200 h-64"
-        >
-          <img
-            class="opacity-50 w-[100px] h-[100px] m-6"
-            src="./public/images/payment/img-1.png"
-            alt=""
-          />
-          <div class="text-center">
-            <div class="flex justify-center mb-3"></div>
-            <p class="text-sm text-[#757575] mb-4">کالایی انتخاب نشده است!</p>
-            <a href="#" class="text-[#9b2c2c] mt-2 block text-sm"
-              >مشاهده همه‌ی محصولات</a
-            >
-          </div>
+    <div
+      class="flex flex-col w-7xl mx-auto md:flex-row gap-4 bg-white p-6 mb-5 border border-[#e2e2e2] rounded-xl"
+    >
+      <img src="./public/images/customer-club/img-3.png" alt="" class="w-24" />
+      <div class="flex flex-col gap-4">
+        <div class="text-2xl font-bold text-[#969995]">سطح نقره ای</div>
+        <div class="text-[#757575] text-base">
+          <p>در این سطح</p>
+          <p>
+            - محصولات سایت ( به غیر از کالاهای فروش ویژه) با 3 درصد تخفیف به شما
+            نشان داده خواهد شد.
+          </p>
+          <p>
+            - 4 کد نخفیف 30 هزار تومانی در ابتدای هر فصل در پنلتان شارژ میشود.
+          </p>
         </div>
       </div>
-      <div class="md:w-[35%] flex flex-col gap-4">
-        <div
-          class="flex flex-col w-full bg-[#F7F8FA] h-72 rounded-xl border border-gray-200"
-        >
-          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
-            <span class="font-bold">قیمت اصلی کالاها (۰):</span>
-            <div class="flex items-center gap-2">
-              <span class="text-lg text-[#757575] font-bold">۰</span>
-              <span class="text-[#757575] text-sm">تومان</span>
-            </div>
-          </div>
-          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
-            <span class="font-bold">کوپن تخفیف:</span>
-            <div class="flex items-center gap-2">
-              <span class="text-lg text-[#757575] font-bold">۰</span>
-              <span class="text-[#757575] text-sm">تومان</span>
-            </div>
-          </div>
-          <div
-            class="flex justify-between border-b border-gray-200 px-4 py-3 text-md text-[#757575]"
-          >
-            <span class="font-bold">مجموع تخفیف‌ها:</span>
-            <div class="flex items-center gap-2">
-              <span class="text-lg text-[#757575] font-bold">۰</span>
-              <span class="text-[#757575] text-sm">تومان</span>
-            </div>
-          </div>
-          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
-            <span class="font-bold">جمع سبد خرید:</span>
-            <div class="flex items-center gap-2">
-              <span class="text-lg text-[#757575] font-bold">۰</span>
-              <span class="text-[#757575] text-sm">تومان</span>
-            </div>
-          </div>
-          <div class="p-4">
-            <span
-              class="block h-12 cursor-pointer text-white bg-[#0a5abd] hover:bg-[#0a295a] text-center p-2 py-3 font-semibold duration-300 rounded-lg"
-              >تایید لیست محصولات</span
-            >
-          </div>
-        </div>
-        <div
-          class="flex flex-col w-full bg-white p-4 text-sm text-[#757575] leading-7 rounded-xl border border-gray-200"
-        >
-          هزینه ارسال با توجه به انتخاب نحوه ارسال کالا محاسبه می‌شود و به مبلغ
-          بالا اضافه می‌گردد.
+    </div>
+    <div
+      class="flex flex-col w-7xl mx-auto md:flex-row gap-4 bg-white p-6 mb-5 border border-[#e2e2e2] rounded-xl"
+    >
+      <img src="./public/images/customer-club/img-4.png" alt="" class="w-24" />
+      <div class="flex flex-col gap-4">
+        <div class="text-2xl font-bold text-[#a64b24]">سطح طلایی</div>
+        <div class="text-[#757575] text-base">
+          <p>در این سطح</p>
+          <p>
+            - محصولات سایت ( به غیر از کالاهای فروش ویژه) با 6 درصد تخفیف به شما
+            نشان داده خواهد شد.
+          </p>
+          <p>
+            - 4 کد نخفیف 50 هزار تومانی در ابتدای هر فصل در پنلتان شارژ میشود.
+          </p>
+          <p>
+            - کالاهای فروش ویژه اختصاصی در پنل سایت به صورت هفتگی که فقط برای
+            شما نشان داده میشود.
+          </p>
         </div>
       </div>
+    </div>
+    <div class="max-w-screen-xl mx-auto mt-16 mb-16 flex items-center justify-center">
+      <a href="register.html" class=" py-2.5 px-14 bg-[#0A295A] text-white rounded text-center">
+        <p class="text-[18px]">مشاهده وضعیت و ارتقا سطح باشگاه</p>
+      </a>
     </div>
     <!-- #endregion -->
     <!-- #region footer-->
@@ -554,7 +498,7 @@
         </div>
         <div class="flex flex-col">
           <a
-            href="Customers-club.html"
+            href="#"
             class="gap-5 text-sm text-[#757575] hover:text-[#000] mb-4"
             >باشگاه مشتریان</a
           >

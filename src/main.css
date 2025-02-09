@@ -7,9 +7,6 @@
   src: url("../public/font/Shabnam.woff") format("woff");
 }
 
-
-
-
 @layer base {
   body {
     @apply font-[shabnam];
