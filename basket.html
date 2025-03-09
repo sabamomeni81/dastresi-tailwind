@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="icon" type="image/png" href="./public/images/favicon/icon.png" />
+    <title>سبد خرید</title>
+  </head>
+  <body>
+    <!-- #region top-refferer-->
+    <span id="top none"></span>
+    <!-- #endregion -->
+    <!-- #region header-mobile-->
+    <div class="block sticky top-0 z-100 lg:hidden">
+      <div
+        class="flex bg-[#f1f1f1] justify-between text-[#666666] items-center px-4 py-4 shadow-[rgba(0, 0, 0, 0.4)] shadow-md"
+      >
+        <div class="flex gap-4.5">
+          <a href="#" class="block w-fit"
+            ><img src="./public/svg/bars.svg" class="w-5 h-5" alt=""
+          /></a>
+          <a href="index.html" class="block w-fit">
+            <img src="./public/images/header/logo.png" class="h-6" alt="" />
+          </a>
+        </div>
+        <div class="flex gap-4.5">
+          <a href="#" class="block w-fit"
+            ><img src="./public/svg/search-mobile.svg" alt=""
+          /></a>
+          <a href="register.html" class="block w-fit"
+            ><img src="./public/svg/person.svg" alt=""
+          /></a>
+          <a href="#" class="block w-fit relative"
+            ><img class="w-6 h-6" src="./public/svg/shopping.svg" alt="" />
+            <div
+              class="w-4 h-4 flex items-center justify-center text-xs bg-[#fe5f55] rounded-full absolute right-[-30%] top-[-25%] text-white"
+            >
+              ۰
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region header-desktop -->
+    <div
+      class="hidden lg:block sticky top-0 z-10 bg-white lg:pt-[10px] pt-0 px-[150px] w-full h-[135px] box-border shadow-sm"
+    >
+      <!-- #region header-top -->
+      <div class="w-full h-3/5 flex items-center justify-start box-border">
+        <div class="w-9/12 h-full flex items-center gap-x-[30px]">
+          <a href="#" class="block w-fit h-fit">
+            <img class="w-24" src="./public/images/header/logo.png" alt="" />
+          </a>
+          <div
+            class="relative pr-2 gap-x-[5px] w-[370px] h-[40px] bg-[#f7f8fa] rounded-[13px] flex items-center justify-start shadow-sm px-[5px]"
+          >
+            <label for="search"
+              ><div class="">
+                <img src="./public/svg/search.svg" alt="" /></div
+            ></label>
+            <div class="w-fit h-fit">
+              <input
+                type="search"
+                id="search"
+                class="font-[shabnam] outline-none"
+                placeholder="جستجو محصولات"
+              />
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <a
+              href="Customers-club.html"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              >باشگاه مشتریان</a
+            >
+            <a
+              href="#"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              >بلاگ</a
+            >
+            <a
+              href="#"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              >ارتباط با ما</a
+            >
+            <a
+              href="#"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              >درباره ما</a
+            >
+          </div>
+        </div>
+        <div class="w-3/12 h-full flex justify-end items-center gap-x-4">
+          <a href="./basket.html" class="block w-fit h-fit">
+            <div
+              class="w-[42px] h-[42px] rounded-xl bg-[#f7f8fa] shadow-sm flex items-center justify-center shadow-gray-300 relative"
+            >
+              <svg
+                fill="#fe5f55"
+                viewBox="-1.5 0 19 19"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cf-icon-svg w-7 hover:fill-[#0a295a]"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M14.252 4.59a.924.924 0 0 1 .921.92v3.602a1.048 1.048 0 0 1-.916 1.017l-8.511.883a.573.573 0 0 1-.145.019.577.577 0 1 0 0 1.154h8.488a.563.563 0 1 1 0 1.126h-.91a1.03 1.03 0 1 1-1.104 0H6.849a1.03 1.03 0 1 1-1.104 0H5.6a1.703 1.703 0 1 1 0-3.406.585.585 0 0 1 .128.014L3.111 3.911H1.39a.563.563 0 1 1 0-1.125h2.09a.562.562 0 0 1 .515.337l.64 1.466h9.617z"
+                  ></path>
+                </g>
+              </svg>
+              <div
+                class="w-[20px] h-[21px] bg-[#fe5f55] rounded-full flex items-center justify-center absolute font-[shabnam] top-[-20%] right-[-20%] shadow-sm shadow-gray-400 text-white"
+              >
+                ۰
+              </div>
+            </div>
+          </a>
+          <a href="./register.html" class="block w-fit h-fit">
+            <div
+              class="w-[104px] h-[42px] rounded-xl flex items-center justify-center font-[shabnam] text-white text-[14px] shadow-sm bg-[#0a5abd] hover:bg-[#0a295a]"
+            >
+              ورود و ثبت‌نام
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region header-bottom-->
+      <div class="h-2/5 mt-1.5 flex gap-x-5 justify-between items-center">
+        <ul class="flex-col h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center items-center nav-link text-[14px] text-[#fe5f55] font-medium font-[shabnam]"
+          >
+            خانه
+          </li>
+          <li class="flex h-[3px] justify-center bg-[#fe5f55]"></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            لوازم جانبی موبایل و کامپیوتر
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            کابل - مبدل - رابط
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            لوازم تولید محتوا
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            لوازم شبکه
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            کنسول بازی و لوازم جانبی
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+          >
+            لوازم خانگی و شخصی
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+        <ul class="flex-col group h-full space-y-4 mt-2">
+          <li
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam]"
+          >
+            برندها
+            <svg
+              viewBox="0 0 24 24"
+              width="16px"
+              height="16px"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#00000099"
+              class="group-hover:fill-[#fe5f55]"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 16l-6-6h12z"></path>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
+        </ul>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+    <!-- #region progress-->
+    <div class="py-0 md:py-8 mt-5 px-4 md:px-36 mb-8">
+      <div class="relative">
+        <div class="flex justify-between">
+          <div class="w-[95%] h-1 top-8 right-2 absolute bg-[#0a5abd]"></div>
+          <div class="relative flex flex-col items-center">
+            <div
+              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-[#0a5abd] text-color"
+            >
+              <img src="./public/svg/basket.svg" class="w-5.5 h-5.5" alt="" />
+            </div>
+            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
+              سبد خرید
+            </div>
+            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
+              سبد
+            </div>
+          </div>
+          <div class="relative flex flex-col items-center">
+            <div
+              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
+            >
+              <img src="./public/svg/location.svg" class="w-5.5 h-5.5" alt="" />
+            </div>
+            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
+              انتخاب آدرس
+            </div>
+            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
+              آدرس
+            </div>
+          </div>
+          <div class="relative flex flex-col items-center">
+            <div
+              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
+            >
+              <img src="./public/svg/truk.svg" class="w-5.5 h-5.5" alt="" />
+            </div>
+            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
+              نحوه ارسال
+            </div>
+            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
+              ارسال
+            </div>
+          </div>
+          <div class="relative flex flex-col items-center">
+            <div
+              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
+            >
+              <img src="./public/svg/wallet.svg" class="w-5.5 h-5.5" alt="" />
+            </div>
+            <div class="mt-2 font-semibold text-[#757575]">پرداخت</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region payment-->
+    <div class="flex flex-col md:mb-32 md:px-34 mb-14 mx-10 md:flex-row gap-4">
+      <div class="md:w-[67%] mx-5 flex flex-col">
+        <div
+          class="flex p-4 mb-4 text-[#757575] items-center justify-center rounded-xl border border-gray-200 bg-white h-18"
+        >
+          <div class="w-1/2">کد تخفیف دارید؟</div>
+          <div class="1/2 flex pr-28 items-center gap-2">
+            <input
+              id="text"
+              type="text"
+              class="block w-52 h-8.5 placeholder:text-[#757575] border border-gray-300 rounded-xl text-sm focus:outline-none py-1.5 px-2"
+              placeholder="کد تخفیف"
+            />
+            <div
+              class="w-18 h-9 px-1 text-sm text-white font-semibold flex justify-center bg-[#0a5abd] opacity-50 rounded-xl items-center"
+            >
+              ثبت کوپن
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center mb-8 w-full bg-white text-gray rounded-xl border border-gray-200 h-64"
+        >
+          <img
+            class="opacity-50 w-[100px] h-[100px] m-6"
+            src="./public/images/payment/img-1.png"
+            alt=""
+          />
+          <div class="text-center">
+            <div class="flex justify-center mb-3"></div>
+            <p class="text-sm text-[#757575] mb-4">کالایی انتخاب نشده است!</p>
+            <a href="#" class="text-[#9b2c2c] mt-2 block text-sm"
+              >مشاهده همه‌ی محصولات</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="md:w-[35%] flex flex-col gap-4">
+        <div
+          class="flex flex-col w-full bg-[#F7F8FA] h-72 rounded-xl border border-gray-200"
+        >
+          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
+            <span class="font-bold">قیمت اصلی کالاها (۰):</span>
+            <div class="flex items-center gap-2">
+              <span class="text-lg text-[#757575] font-bold">۰</span>
+              <span class="text-[#757575] text-sm">تومان</span>
+            </div>
+          </div>
+          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
+            <span class="font-bold">کوپن تخفیف:</span>
+            <div class="flex items-center gap-2">
+              <span class="text-lg text-[#757575] font-bold">۰</span>
+              <span class="text-[#757575] text-sm">تومان</span>
+            </div>
+          </div>
+          <div
+            class="flex justify-between border-b border-gray-200 px-4 py-3 text-md text-[#757575]"
+          >
+            <span class="font-bold">مجموع تخفیف‌ها:</span>
+            <div class="flex items-center gap-2">
+              <span class="text-lg text-[#757575] font-bold">۰</span>
+              <span class="text-[#757575] text-sm">تومان</span>
+            </div>
+          </div>
+          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
+            <span class="font-bold">جمع سبد خرید:</span>
+            <div class="flex items-center gap-2">
+              <span class="text-lg text-[#757575] font-bold">۰</span>
+              <span class="text-[#757575] text-sm">تومان</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <span
+              class="block h-12 cursor-pointer text-white bg-[#0a5abd] hover:bg-[#0a295a] text-center p-2 py-3 font-semibold duration-300 rounded-lg"
+              >تایید لیست محصولات</span
+            >
+          </div>
+        </div>
+        <div
+          class="hidden md:flex flex-col w-full bg-white p-4 text-sm text-[#757575] leading-7 rounded-xl border border-gray-200"
+        >
+          هزینه ارسال با توجه به انتخاب نحوه ارسال کالا محاسبه می‌شود و به مبلغ
+          بالا اضافه می‌گردد.
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region footer-->
+    <!-- #region about-us-->
+    <div
+      class="flex flex-col lg:flex-row justify-between mt-6 p-7 text-sm text-[#000000de] bg-[#e2e2e2]"
+    >
+      <div class="flex items-center gap-2 mb-4 lg:mb-0">
+        <img src="./public/svg/phone-footer.svg" alt="" />
+        <span class="block text-[14px] text-[#757575]">۰۲۱-۳۳۹۰۲۶۴۶</span>
+      </div>
+      <div class="flex items-center gap-2 mb-4 lg:mb-0">
+        <img src="./public/svg/clock-footer.svg" alt="" class="w-5" />
+        <span class="block text-[14px] text-[#757575] leading-7"
+          >شنبه تا چهارشنبه از ساعت ۱۰ صبح الی ساعت ۱۸ پنجشنبه ها از ۱۰ صبح الی
+          ساعت 16</span
+        >
+      </div>
+      <div class="flex items-center gap-2 lg:mb-0">
+        <img src="./public/svg/location-footer.svg" alt="" class="w-5" />
+        <span class="block text-[14px] text-[#757575] leading-7"
+          >تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک ۳ - فروشگاه
+          بدیع</span
+        >
+      </div>
+      <div
+        class="hidden lg:flex bg-white text-xs text-[#757575] rounded-xl p-2 py-3 pr-2 pl-1 cursor-pointer hover:text-black w-24 justify-between items-center leading-5 shadow-md"
+      >
+        <a href="#top" class="flex items-center justify-between w-full">
+          <span>برو بالا</span>
+
+          <img src="./public/images/svg/arrow-top.svg" alt="" class="w-5" />
+        </a>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region access-->
+    <div
+      class="bg-[#f5f5f5] mx-auto px-4 lg:px-32 flex flex-col lg:flex-row gap-8 py-4 lg:py-5"
+    >
+      <div
+        class="justify-center items-center flex flex-col gap-8 pt-8 lg:pt-10"
+      >
+        <img
+          style="max-width: 190px"
+          src="./public/images/header/logo.png"
+          alt=""
+        />
+        <div class="flex flex-row flex-wrap gap-4 justify-center">
+          <div class="flex text-sm">با ما در ارتباط باشید:</div>
+          <a href="#" class="px-2"
+            ><img src="./public/images/footer/instagram.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="mt-4 md:mt-0">
+        <div class="font-bold text-xl text-black-87 mb-4">
+          فروشگاه اینترنتی دسترسی
+        </div>
+        <div class="text-[#00000099] text-[16px] leading-7">
+          <div class="max-w-[614px]">
+            فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در
+            حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398
+            از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای
+            اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از
+            مشتریانش را جلب کند و سرانجام در سال 1399 فروش از طریق سایت را هم به
+            فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب
+            صحیح شما را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه
+            آداپتور موبایل، کابل شارژ، پاوربانک، ساعت هوشمند، هندزفری و هدست،
+            لوازم گیمینگ، باتری و شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده
+            دیجیتال و هزاران گجت جذاب ادامه میدهد.
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="font-bold text-xl mb-4 text-center md:text-right">
+          دسترسی سریع
+        </div>
+        <div class="flex flex-col">
+          <a
+            href="Customers-club.html"
+            class="gap-5 text-sm text-[#757575] hover:text-[#000] mb-4"
+            >باشگاه مشتریان</a
+          >
+          <a
+            href="#"
+            class="gap-5 text-sm text-[#757575] hover:text-[#000] mb-4"
+            >سوالات متداول</a
+          >
+          <a
+            href="#"
+            class="gap-5 text-sm text-[#757575] hover:text-[#000] mb-4"
+            >بلاگ</a
+          >
+          <a
+            href="#"
+            class="gap-5 text-sm text-[#757575] hover:text-[#000] mb-4"
+            >شرایط و قوانین</a
+          >
+          <a
+            href="#"
+            class="gap-5 text-sm text-[#757575] hover:text-[#000] mb-4"
+            >ارتباط ما</a
+          >
+          <a
+            href="#"
+            class="gap-5 text-sm text-[#757575] hover:text-[#000] mb-4"
+            >درباره ما</a
+          >
+        </div>
+      </div>
+      <div class="mt-2 md:mt-0 mx-auto flex items-center">
+        <a
+          target="_blank"
+          href="https://trustseal.enamad.ir/Error/ErrorReferrer"
+          class=""
+        >
+          <img
+            class="max-w-36"
+            src="./public/images/footer/enamad.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region legal-->
+    <div class="font-medium text-sm text-center bg-[#0a5abd] text-white py-3">
+      تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می‌باشد.
+    </div>
+    <!-- #endregion -->
+
+    <!-- #endregion -->
+  </body>
+</html>
