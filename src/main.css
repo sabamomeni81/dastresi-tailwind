@@ -127,7 +127,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
   }
 
   .swiper-slide img {
@@ -136,4 +135,8 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+#menu:checked ~ .modal-menu {
+  display: block;
 }

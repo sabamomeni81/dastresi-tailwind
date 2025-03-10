@@ -11,14 +11,155 @@
     <!-- #region top-refferer-->
     <span id="top none"></span>
     <!-- #endregion -->
+    <!-- #region header-mobile-->
+    <div class="block sticky top-0 z-100 lg:hidden">
+      <div
+        class="flex bg-[#f1f1f1] justify-between text-[#666666] items-center px-4 py-4 shadow-[rgba(0, 0, 0, 0.4)] shadow-md"
+      >
+        <div class="flex gap-4.5">
+          <!-- #region modal-->
+          <label for="menu"
+            ><img src="./public/svg/bars.svg" class="w-5" alt=""
+          /></label>
+          <input type="radio" id="menu" class="hidden" />
+          <div
+            class="modal-menu fixed shadow-2xl top-0 right-0 w-72 h-full bg-white hidden"
+          >
+            <div class="flex justify-center">
+              <a href="index.html" class="block">
+                <img
+                  src="./public/images/header/logo.png"
+                  alt=""
+                  class="my-8 w-36"
+                />
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-around p-2.5 border-y-[1px] border-y-[#e2e2e2] bg-white"
+            >
+              <span class="text-xs text-[#a3a3a3] hover:text-black">خانه</span>
+              <span class="text-xs text-[#a3a3a3] hover:text-black"
+                >درباره ما</span
+              >
+              <span class="text-xs text-[#a3a3a3] hover:text-black"
+                >تماس با ما</span
+              >
+              <span class="text-xs text-[#a3a3a3] hover:text-black">بلاگ</span>
+            </div>
+            <div class="overflow-auto h-6/10">
+              <div
+                class="my-10 flex justify-between text-black mx-4 font-extralight"
+              >
+                لوازم جانبی موبایل و کامپیوتر
+                <img
+                  src="./public/images/svg/header-arrow.svg"
+                  alt=""
+                  class="w-2"
+                />
+              </div>
+              <div
+                class="my-10 flex justify-between text-black mx-4 font-extralight"
+              >
+                کابل - مبدل - رابط
+                <img
+                  src="./public/images/svg/header-arrow.svg"
+                  alt=""
+                  class="w-2"
+                />
+              </div>
+              <div
+                class="my-10 flex justify-between text-black mx-4 font-extralight"
+              >
+                لوازم تولید محتوا
+                <img
+                  src="./public/images/svg/header-arrow.svg"
+                  alt=""
+                  class="w-2"
+                />
+              </div>
+              <div
+                class="my-10 flex justify-between text-black mx-4 font-extralight"
+              >
+                لوازم شبکه
+                <img
+                  src="./public/images/svg/header-arrow.svg"
+                  alt=""
+                  class="w-2"
+                />
+              </div>
+              <div
+                class="my-10 flex justify-between text-black mx-4 font-extralight"
+              >
+                کنسول بازی و لوازم جانبی
+                <img
+                  src="./public/images/svg/header-arrow.svg"
+                  alt=""
+                  class="w-2"
+                />
+              </div>
+              <div
+                class="my-10 flex justify-between text-black mx-4 font-extralight"
+              >
+                لوازم خانگی و شخصی
+                <img
+                  src="./public/images/svg/header-arrow.svg"
+                  alt=""
+                  class="w-2"
+                />
+              </div>
+              <div
+                class="my-10 flex justify-between text-black mx-4 font-extralight"
+              >
+                برند‌ها
+                <img
+                  src="./public/images/svg/header-arrow.svg"
+                  alt=""
+                  class="w-2"
+                />
+              </div>
+            </div>
+            <div class="mx-auto h/2/10 mt-6 flex items-center justify-center">
+              <a
+                href="Customers-club.html"
+                class="py-4 px-16 bg-[#0A295A] text-white rounded-xl text-center"
+              >
+                <p class="text-xs">ورود به باشگاه مشتریان</p>
+              </a>
+            </div>
+          </div>
+          <!-- #endregion -->
+
+          <a href="index.html" class="block w-fit">
+            <img src="./public/images/header/logo.png" class="h-6" alt="" />
+          </a>
+        </div>
+        <div class="flex gap-4.5">
+          <a href="#" class="block w-fit"
+            ><img src="./public/svg/search-mobile.svg" alt=""
+          /></a>
+          <a href="register.html" class="block w-fit"
+            ><img src="./public/svg/person.svg" alt=""
+          /></a>
+          <a href="basket.html" class="block w-fit relative"
+            ><img class="w-6 h-6" src="./public/svg/shopping.svg" alt="" />
+            <div
+              class="w-4 h-4 flex items-center justify-center text-xs bg-[#fe5f55] rounded-full absolute right-[-30%] top-[-25%] text-white"
+            >
+              ۰
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
     <!-- #region header-desktop -->
     <div
-      class="sticky top-0 z-10 bg-white lg:pt-[10px] pt-0 px-[150px] w-full h-[135px] box-border shadow-sm"
+      class="hidden lg:block sticky top-0 z-10 bg-white lg:pt-[10px] pt-0 px-[150px] w-full h-[135px] box-border shadow-sm"
     >
       <!-- #region header-top -->
       <div class="w-full h-3/5 flex items-center justify-start box-border">
         <div class="w-9/12 h-full flex items-center gap-x-[30px]">
-          <a href="#" class="block w-fit h-fit">
+          <a href="index.html" class="block w-fit h-fit">
             <img class="w-24" src="./public/images/header/logo.png" alt="" />
           </a>
           <div
@@ -106,7 +247,7 @@
           <li
             class="flex justify-center items-center nav-link text-[14px] text-[#fe5f55] font-medium font-[shabnam]"
           >
-            <a href="index.html">خانه</a>
+            <a href="index.html" class="block"> خانه </a>
           </li>
           <li class="flex h-[3px] justify-center bg-[#fe5f55]"></li>
         </ul>
@@ -333,17 +474,17 @@
     <!-- #endregion -->
     <!-- #region customer-club -->
     <div
-      class="w-7xl mx-auto mt-5 mb-5 bg-white border border-[#e2e2e2] rounded-xl px-6 py-6"
+      class="md:w-7xl w-[93%] mt-4 mx-auto md:mt-5 md:mb-5 bg-white border border-[#e2e2e2] rounded-xl md:p-6"
     >
-      <h1 class="mb-6 text-[#757575] text-[30px] font-bold">
+      <h1 class="md:mb-6 text-[#757575] m-5 text-[30px] font-bold">
         <a href="Customers-club.html">باشگاه مشتریان</a>
       </h1>
       <img
-        class="w-full rounded-xl mb-2"
+        class="md:w-full w-[86%] mx-auto rounded-xl  md:mb-2"
         src="./public/images/customer-club/img-1.png"
         alt=""
       />
-      <div class="text-black-87 mb-2">
+      <div class="text-black-87 mb-2 px-6">
         <p>
           باشگاه مشتریان فروشگاه دسترسی در راستای حمایت از مشتریان وفادار سایت
           ایجاد شده است. به این ترتیب که هر فرد با توجه به تعداد و مبلغی که تا
@@ -426,10 +567,11 @@
       </a>
     </div>
     <!-- #endregion -->
+
     <!-- #region footer-->
     <!-- #region about-us-->
     <div
-      class="flex flex-col lg:flex-row justify-between py-6 px-36 text-sm text-[#000000de] bg-[#e2e2e2]"
+      class="flex flex-col lg:flex-row justify-between mt-6 p-7 md:px-32 text-sm text-[#000000de] bg-[#e2e2e2]"
     >
       <div class="flex items-center gap-2 mb-4 lg:mb-0">
         <img src="./public/svg/phone-footer.svg" alt="" />
@@ -437,15 +579,15 @@
       </div>
       <div class="flex items-center gap-2 mb-4 lg:mb-0">
         <img src="./public/svg/clock-footer.svg" alt="" class="w-5" />
-        <span class="block text-[14px] text-[#757575]"
-          >شنبه تا چهارشنبه از ساعت 10 صبح الی ساعت 18 پنجشنبه ها از 10 صبح الی
+        <span class="block text-[14px] text-[#757575] leading-7"
+          >شنبه تا چهارشنبه از ساعت ۱۰ صبح الی ساعت ۱۸ پنجشنبه ها از ۱۰ صبح الی
           ساعت 16</span
         >
       </div>
-      <div class="flex items-center gap-2 mb-4 lg:mb-0">
+      <div class="flex items-center gap-2 lg:mb-0">
         <img src="./public/svg/location-footer.svg" alt="" class="w-5" />
-        <span class="block text-[14px] text-[#757575]"
-          >تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک 3 - فروشگاه
+        <span class="block text-[14px] text-[#757575] leading-7"
+          >تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک ۳ - فروشگاه
           بدیع</span
         >
       </div>
@@ -454,6 +596,7 @@
       >
         <a href="#top" class="flex items-center justify-between w-full">
           <span>برو بالا</span>
+
           <img src="./public/svg/arrow-up.svg" alt="" class="w-5" />
         </a>
       </div>
@@ -461,7 +604,7 @@
     <!-- #endregion -->
     <!-- #region access-->
     <div
-      class="bg-[#f5f5f5] mx-auto px-32 flex flex-col lg:flex-row gap-8 py-4 lg:py-5"
+      class="bg-[#f5f5f5] mx-auto px-4 lg:px-32 flex flex-col lg:flex-row gap-8 py-4 lg:py-5"
     >
       <div
         class="justify-center items-center flex flex-col gap-8 pt-8 lg:pt-10"
@@ -503,7 +646,7 @@
         </div>
         <div class="flex flex-col">
           <a
-            href="#"
+            href="Customers-club.html"
             class="gap-5 text-sm text-[#757575] hover:text-[#000] mb-4"
             >باشگاه مشتریان</a
           >
@@ -534,7 +677,7 @@
           >
         </div>
       </div>
-      <div class="mt-2 md:mt-0 mr-16 flex items-center">
+      <div class="mt-2 md:mt-0 mx-auto flex items-center">
         <a
           target="_blank"
           href="https://trustseal.enamad.ir/Error/ErrorReferrer"
@@ -549,9 +692,12 @@
       </div>
     </div>
     <!-- #endregion -->
+    <!-- #region legal-->
     <div class="font-medium text-sm text-center bg-[#0a5abd] text-white py-3">
       تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می‌باشد.
     </div>
+    <!-- #endregion -->
+
     <!-- #endregion -->
   </body>
 </html>
